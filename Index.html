@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!--converts typed characters into machinereadable language-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--is used to provide header information-->
+    <link rel="Stylesheet" href="Index.css">
+    <title>ICE CREAM COTTAGE</title>
+
+</head>
+<body>
+<section>
+    <div id="navbar">
+        <a href="Location.html">Location</a>
+        <a href="Cart.html">Cart</a>
+        <a href="Flavours.html">Flavour</a>
+        <a href="Index.html">Home</a>
+    </div>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+        }
+    </script>
+    <img src=>
+</section>
+<section>
+
+</section>
+</body>
+</html>
