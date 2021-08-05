@@ -1,0 +1,19 @@
+.Bg{
+    background-color: #93BDBF;
+  }
+  .topnav {
+  background-color:lightgray;
+  overflow: hidden
+  }
+
+.topnav a {
+    margin-top: auto;
+    overflow: hidden;
+    float: right;
+    background-color:lightgray;
+    text-align: center;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+  }

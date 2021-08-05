@@ -1,0 +1,22 @@
+.bg {   
+    background-image: url("images/Glass\ IceCream.jpg");
+    background-size: cover;
+  }/*backgroundimage*/
+  
+  .topnav a {
+    float: right;
+    color: black;
+    padding: 18px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+  }
+            
+  #head{  /*the name of the icecream shop*/
+    color: black;
+    font-size: 200px;
+    position: absolute; /*positions my text relative to its closest positioned ancestor*/
+    text-align: center;
+    font-style: italic;
+    font-family: cursive;
+  }
