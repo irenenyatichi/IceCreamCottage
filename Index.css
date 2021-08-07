@@ -168,7 +168,6 @@
             transition: 0.5s ease;
             background: var(--bg-post-image-overlay);
         }
-
         &:hover .overlay {
             opacity: 1;
         }
@@ -187,9 +186,7 @@
 
 
         .fa-share-alt {
-            color: var(--tx-color-1);
-
-            &:hover {
+            color: var(--tx-color-1); &:hover {
                 color: var(--tx-color-1);
             }
         }
