@@ -34,4 +34,168 @@
   .sticky + .content {
     padding-top: 60px;
   }
-  
+/* THE CAROUSEL */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    /* GENERAL FONT */
+    --font1: "Titillium Web", sans-serif;
+    --font2: 'Roboto', sans-serif;
+    /* GENERAL COLOR */
+    --bg-col-1: #0059b3;
+    --bg-col-2: #dc3545;
+    --bg-col-3: #fff;
+    --bg-col-4: #024c96;
+    --tx-color-1: #fff;
+    --tx-color-2: #000;
+    --tx-color-3: #0059b3;
+    
+    // post section
+    --tx-post-section-title: #212529;
+    --bg-post-section: aliceblue;
+
+    --bg-post-title: #fff;
+    --tx-post-title: #212529;
+    --bg-post-image-overlay: rgba(0, 89, 179, 0.5);  
+
+
+    //button arrow & archive
+    --tx-button: #fff;
+    --bg-button: #0059b3;
+}
+.dark-mode {
+   /* GENERAL COLOR */
+    --bg-col-1: #121212;
+    --tx-color-1: #fff;
+
+    //button arrow & archive
+    --tx-button: #fff;
+    --bg-button: #272727;
+    --bg-button-border: #272727;
+    --bg-button-hover: #fff;
+    --tx-button-hover: #272727;
+    --bg-button-focus: #0f0f0f40;
+
+
+//posts-section
+    --tx-post-section-title: #fff;
+    --bg-post-section: #121212;
+    --bg-post-title: #272727;
+    --tx-post-title: #fff;
+    --bg-post-image-overlay: rgba(0, 0, 0, 0.5);
+}
+
+/*start dark mode css*/
+
+/*end dark mode css*/
+
+// BUTTON GENERAL
+.btn-archive {
+    color: var(--tx-button);
+    background: var(--bg-button);
+    border-color: var(--bg-button-border);
+
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+    &:hover {
+        color: var(--tx-button-hover);
+        background-color: var(--bg-button-hover);
+        border-color: var(--bg-button-hover);
+    }
+
+    &:focus {
+        -webkit-box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+        box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+    }
+
+
+
+
+}
+
+.posts-section {
+    background: var(--bg-post-section);
+    font-family: var(--font1);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
+
+    .title-section {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--tx-post-section-title);
+    }
+
+    .bg-card {
+        background: var(--bg-post-title);
+        color: var(--tx-post-title);
+    }
+
+    .post-body h2 {
+        font-weight: 600;
+    }
+
+    .post-info {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+
+
+
+    .text-img-over {
+        position: relative;
+
+        .card-img-top {
+
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.5s ease;
+            background: var(--bg-post-image-overlay);
+        }
+
+        &:hover .overlay {
+            opacity: 1;
+        }
+    }
+
+    .social-hover {
+        color: var(--tx-color-1);
+        font-size: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+
+        .fa-share-alt {
+            color: var(--tx-color-1);
+
+            &:hover {
+                color: var(--tx-color-1);
+            }
+        }
+
+
+    }
+
+
+}
