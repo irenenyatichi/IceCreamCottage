@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<title>HTML5 Local Storage Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="rating" content="General">
+<meta name="expires" content="never">
+<meta name="language" content="English, EN">
+<meta name="description" content="Shopping cart project with HTML5 and JavaScript">
+<meta name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
+<meta name="author" content="dcwebmakers.com">
+<script src="Storage.js"></script>
+<link rel="stylesheet" href="Cart.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#4FE6CA;">
+        <div class="container">
+            <a class="navbar-brand" href="Homepage.html"><h1 style="font-family: 'Lobster', cursive;">Ice Cream Cottage</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+        <li class="nav-item active" >
+            <a class="nav-link" href="Homepage.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Flavours.html" style="color: black;">Flavours</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Cart.html" style="color: black;">Cart</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Location.html" style="color: black;">Location</a>
+        </li></ul>
+        </div>
+        </div>
+    </nav>
+    <form name="ShoppingList">
+        <fieldset>
+            <legend>Shopping cart</legend>
+            <label>Item: <input type="text" name="name"></label>
+            <label>Quantity: <input type="text" name="data"></label>
+    
+            <input type="button" value="Save"   onclick="SaveItem()">
+            <input type="button" value="Update" onclick="ModifyItem()">
+            <input type="button" value="Delete" onclick="RemoveItem()">
+        </fieldset>
+        <div id="items_table">
+            <h2>Shopping List</h2>
+            <table id="list"></table>
+            <label><input type="button" value="Clear" onclick="ClearAll()">
+            * Delete all items</label>
+        </div>
+    </form>
+    
+</body>
