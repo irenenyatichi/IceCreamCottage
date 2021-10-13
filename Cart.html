@@ -10,6 +10,13 @@
 <meta name="description" content="Shopping cart project with HTML5 and JavaScript">
 <meta name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
 <meta name="author" content="dcwebmakers.com">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <script src="Storage.js"></script>
 <link rel="stylesheet" href="Cart.css">
 </head>
@@ -37,7 +44,7 @@
         </div>
         </div>
     </nav>
-    <form name="ShoppingList">
+    <form name="ShoppingList" style="margin-top: 80px;">
         <fieldset>
             <legend>Shopping cart</legend>
             <label>Item: <input type="text" name="name"></label>
@@ -53,6 +60,5 @@
             <label><input type="button" value="Clear" onclick="ClearAll()">
             * Delete all items</label>
         </div>
-    </form>
-    
+    </form>    
 </body>
